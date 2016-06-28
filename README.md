@@ -27,8 +27,6 @@ public class HelloWorld {
         H1 siteTitle = new H1("Hello, World!");
         
         html.getBody().getChildreen().add(siteTitle);
-        html.getBody().getScriptSources().add("https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js");
-        html.getBody().getScriptSources().add("js/bootstrap.min.js");                                
         
         index.setHtml(html);
         
