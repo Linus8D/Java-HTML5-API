@@ -18,18 +18,17 @@ public class HelloWorld {
         index.setFileName("index");
         
         Html html = new Html();
-        html.getHead().setAuthorMeta("Linus Jarneving");
-        html.getHead().getCssSources().add("css/bootstrap.min.css");
-        html.getHead().getCssSources().add("css/custom.css");
-        html.getHead().setTitle("Welcome to Linus website!");
-        html.getHead().setDescriptionMeta("The website of Linus Jarneving");
+        html.getHead().setAuthorMeta("Joe Doe"); // The author meta tag within the head tags.
+        html.getHead().getCssSources().add("css/style.css"); // Links to a .CSS file in a folder named css. 
+        html.getHead().setTitle("Hello, World!"); // The title meta tag in the head.
+        html.getHead().setDescriptionMeta("Hello World is a basic computer program that prints hello world."); // The description tag
         
-        H1 siteTitle = new H1("Hello, World!");
+        H1 siteTitle = new H1("Hello, World!"); // Example of an extension of the HtmlTag class.
         
-        html.getBody().getChildreen().add(siteTitle);
+        html.getBody().getChildreen().add(siteTitle); // Put the H1 objectet siteTitle within the HTML body tags. 
         
-        index.setHtml(html);
+        index.setHtml(html); // Set the HTML html tags of the HTML document.
         
-        index.createHtmlFile("/home/linus/Desktop");
+        index.createHtmlFile("/home/Joe Doe/Desktop");  // Creates the HTML document at directory home/Joe Doe/Desktop
     }               
 }
