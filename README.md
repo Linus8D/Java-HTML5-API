@@ -18,18 +18,21 @@ public class HelloWorld
         HtmlFile index = new HtmlFile();
         index.setFileName("index");
         
-        /* 
-            Add a header 1 element (i.e. <h1> element) to the created HTML page that says Hello World!
-            Since the content of a HTML document that is seen in the web-browser lies within the <body></body> 
-            tags, we add the <h1> element within those tags:
+        /*  
+            Add a header 1 element (i.e. <h1> element) to the created 
+            HTML page that says Hello World!    
         */ 
         index.getHtml().getBody().getTags().add(new H1("Hello World!"));
         
         // Create the HTML file physically in the local directory: 
         index.createHtmlFile("/home/linus/Desktop/Hello World");
         
-        // The H1 object declared in this example is implemented in the class below and demonstrates how to extend
-        // the HtmlTag class.
+        /* 
+            The H1 class is implemented in the below class and demonstrates
+            how to extend the abstract class HtmlTag. Note that the HTML markup
+            of the H1 class is printed/obtained by overriding the toString()
+            method.
+        */
     }               
 }
 
