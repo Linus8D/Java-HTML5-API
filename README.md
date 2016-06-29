@@ -1,8 +1,8 @@
 # Java-HTML5-API
 An API (application programming interface) for creating HTML documents using Java that can be used for creating static websites.
 
-## Example - Hello, world!
-The following example illustrates how to create a HTML document at the working directory that prints _Hello, world!_ in the browser.
+## Example - Hello World!
+The Hello World example demonstrates how to create a HTML file at a given local directory and how to extend the HtmlTag class. 
 
 ```java
 
@@ -10,25 +10,43 @@ import com.lj.html.HtmlFile;
 import com.lj.html.tags.Html;
 import com.lj.html.tags.HtmlTag;
 
-public class HelloWorld {
-
-    public static void main(String[] args) {
+public class HelloWorld 
+{
+    public static void main(String[] args) 
+    {        
+        // Create a HtmlFile object and name it index:
         HtmlFile index = new HtmlFile();
-        index.setDir("");
         index.setFileName("index");
         
-        Html html = new Html();
-        html.getHead().setAuthorMeta("Joe Doe"); // The author meta tag within the head tags.
-        html.getHead().getCssSources().add("css/style.css"); // Links to a .CSS file in a folder named css. 
-        html.getHead().setTitle("Hello, World!"); // The title meta tag in the head.
-        html.getHead().setDescriptionMeta("Hello World is a basic computer program that prints hello world."); // The description tag
+        /* 
+            Add a header 1 element (i.e. <h1> element) to the created HTML page that says Hello World!
+            Since the content of a HTML document that is seen in the web-browser lies within the <body></body> 
+            tags, we add the <h1> element within those tags:
+        */ 
+        index.getHtml().getBody().getTags().add(new H1("Hello World!"));
         
-        H1 siteTitle = new H1("Hello, World!"); // Example of an extension of the HtmlTag class.
+        // Create the HTML file physically in the local directory: 
+        index.createHtmlFile("/home/linus/Desktop/Hello World");
         
-        html.getBody().getChildreen().add(siteTitle); // Put the H1 objectet siteTitle within the HTML body tags. 
-        
-        index.setHtml(html); // Set the HTML html tags of the HTML document.
-        
-        index.createHtmlFile("/home/Joe Doe/Desktop");  // Creates the HTML document at directory home/Joe Doe/Desktop
+        // The H1 object declared in this example is implemented in the class below and demonstrates how to extend
+        // the HtmlTag class.
     }               
+}
+
+class H1 extends HtmlTag
+{
+    String txt;
+
+    public H1(){};
+    
+    public H1(String txt)
+    {
+        this.txt = txt;
+    }
+    
+    @Override
+    public String toString() 
+    {
+        return "<h1>"+txt+"</h>\n";
+    }    
 }
