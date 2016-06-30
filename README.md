@@ -181,3 +181,7 @@ class P extends HtmlTag
     }    
 }
 ```
+
+## Example - A simple blog
+Att skriva...
+1.  Antag att vi har en databas med artiklar. Varje tupel kan skrivas som (id, titel, beskrivning, innehåll, publiseringsdatum, författare).
