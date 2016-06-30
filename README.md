@@ -6,10 +6,11 @@ A _static website_ is composed of HTML files along with external assets such as 
 
 Because static websites requires no assembly by a web--application, the website load time and hosting costs are often reduced. 
 
-## How do I get started?
-Download the packages and follow the tutorials outlined in this README.md. 
+## Tutorial
+The following tutorials serves as usage instruction material. Because the packages is small (only five classes) the tutorial
+should be sufficient for developers interested in extending the packages as well. 
 
-## Tutorial 1 - A _Hello World_ application
+### Tutorial 1 - A _Hello World_ application
 A _Hello World_ application is an introductory application that displays the sentence _Hello World!_ to the user. In the following tutorial, the sentence _Hello World!_ will be displayed in the reader's web browser. In the process, the reader 
 will learn how to
 
