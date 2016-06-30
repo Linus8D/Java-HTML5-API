@@ -1,10 +1,23 @@
 # Java-HTML5-API
-An API (application programming interface) for creating HTML documents using Java that can be used for creating static websites.
+Java-HTML5-API is a Java package for creating HTML files in a local directory that can be used to create static websites.
 
-## anmärknnng
-Skriv som Oracle gör i sina JavaFX guider. 
+## What is a static website?
+A _static website_ is composed of HTML files along with external assets such as Javascripts and CSS files. This contrasts to  _dynamic websites_ which are assembled by a serve-side web-application each time an user visits a website. 
 
-## Introduction
+Because static websites requires no assembly by a web--application, the website load time and hosting costs are often reduced. 
+
+## How do I get started?
+Download the packages and follow the tutorials outlined in this README.md. 
+
+## Tutorial 1 - A _Hello World_ application
+A _Hello World_ application is an introductory application that displays the sentence _Hello World!_ to the user. In the following tutorial, the sentence _Hello World!_ will be displayed in the reader's web browser. In the process, the reader 
+will learn how to
+
+1.  create a HTML document at a directory of choosing using the Java-HTML5-API and
+2.  how to extend Java-HTML5-API's `abstract class HtmlTags` in order to model HTML tags/elements such as `<p></p>`, `<div class="foo"></div>` etc.
+
+In the next section we will begin tutorial 1 by creating an empty HTML document using Java-HTML5-API's `HtmlFile` class
+### Modeling a HTML document using the HTML
 The Java-HTML5-API creates a static web page by creating a HtmlFile instance with the following members
 
 1.  A method for printing the HTML document at a given directory.
