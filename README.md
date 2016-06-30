@@ -185,3 +185,7 @@ class P extends HtmlTag
 ## Example - A simple blog
 Att skriva...
 1.  Antag att vi har en databas med artiklar. Varje tupel kan skrivas som (id, titel, beskrivning, innehåll, publiseringsdatum, författare).
+2.  Antag vidare att en java class som heter databas har skapats med vilken man kan hämta artiklar ur databasen.
+3.  Antag vidare att database klassen förvarar sina artiklar i en List<Article> articleData instans.
+4.  Antag att artikel instansen är skriven enligt java beans så att man kan skriva get...() och set...().
+5.  Konstruera nu en HtmlTag extension som beskriver hur en artikel skall se ut på websidan.
