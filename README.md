@@ -1,6 +1,9 @@
 # Java-HTML5-API
 An API (application programming interface) for creating HTML documents using Java that can be used for creating static websites.
 
+## anmärknnng
+Skriv som Oracle gör i sina JavaFX guider. 
+
 ## Introduction
 The Java-HTML5-API creates a static web page by creating a HtmlFile instance with the following members
 
