@@ -1,4 +1,4 @@
-# Java-HTML5-API
+# Introduction
 Java-HTML5-API is a Java package for creating HTML files in a local directory that can be used to create static websites.
 
 ## What is a static website?
@@ -6,33 +6,22 @@ A _static website_ is composed of HTML files along with external assets such as 
 
 Because static websites requires no assembly by a web--application, the website load time and hosting costs are often reduced. 
 
-## Tutorial
+# Tutorials
 The following tutorials serves as usage instruction material. Because the packages is small (only five classes) the tutorial
 should be sufficient for developers interested in extending the packages as well. 
 
-### Tutorial 1 - A _Hello World_ application
+## Tutorial 1 - A _Hello World_ application
 A _Hello World_ application is an introductory application that displays the sentence _Hello World!_ to the user. In the following tutorial, the sentence _Hello World!_ will be displayed in the reader's web browser. In the process, the reader 
 will learn how to
 
 1.  create a HTML document at a directory of choosing using the Java-HTML5-API and
-2.  how to extend Java-HTML5-API's `abstract class HtmlTags` in order to model HTML tags/elements such as `<p></p>`, `<div class="foo"></div>` etc.
+2.  how to extend Java-HTML5-API's `abstract class HtmlTags` in order to model HTML tags/elements such as `<p></p>`, `<div class="foo"></div>` among others.
 
-In the next section we will begin tutorial 1 by creating an empty HTML document using Java-HTML5-API's `HtmlFile` class. The 
-HTML document will be named _Hello World_ and created in a folder Hello World in the _Desktop_ directory. 
-### Modeling a HTML document using the HTML
-The Java-HTML5-API creates a static web page by creating a HtmlFile instance with the following members
+The _Hello World!_ tutorial is structured as follows. In the next section the reader learns how to create an empty HTML document at a directory of his/her choosing. 
 
-1.  A method for printing the HTML document at a given directory.
-2.  An instance variable that names the file e.g. index.html. 
-3.  An Html object.
-
-The Html object contains the &lt;head&gt; and &lt;body&gt; tags of a HTML document. These tags are in turn modeled by 
-two corresponding classes:
-
-1.  <strong> Body - </strong> Which models the &lt;body&gt; tags and the HTML tags within the opening and closing body tags. This include all content that is rendered in the browser.
-2.  <strong> Head - </strong> Which models the &lt;head&gt; tags and the HTML tags within the opening and closing head tags. Examples includes links to external assets and the title, meta, author and description tags of a HTML document.
-
-To create a HTML document the HtmlFile instance is declared and the HTML file is named:
+### Creating an empty HTML document at a given directory
+Java-HTML5-API's models a HTML document using the `HtmlFile` class. This class also contains a method `createHtmlFile`
+that constructs the HTML document at the directory provided as input argument to the method. 
 ```java
     // Create a HtmlFile instance and name the HTML document that it models index.
     HtmlFile index = new HtmlFile();
