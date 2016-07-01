@@ -7,7 +7,7 @@ Because static websites requires no assembly by a web--application, the website 
 Java-HTML5-API is a Java package for creating HTML files in a local directory that can be used to create static websites.
 
 
-# Tutorials
+# Getting started
 The following tutorials serves as usage instruction material. Because the packages is small (only five classes) the tutorial
 should be sufficient for developers interested in extending the packages as well. 
 
