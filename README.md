@@ -1,10 +1,10 @@
 # Introduction
-Java-HTML5-API is a Java package for creating HTML files in a local directory that can be used to create static websites.
-
-## What is a static website?
 A _static website_ is composed of HTML files along with external assets such as Javascripts and CSS files. This contrasts to  _dynamic websites_ which are assembled by a serve-side web-application each time an user visits a website. 
 
 Because static websites requires no assembly by a web--application, the website load time and hosting costs are often reduced. 
+
+Java-HTML5-API is a Java package for creating HTML files in a local directory that can be used to create static websites.
+
 
 # Tutorials
 The following tutorials serves as usage instruction material. Because the packages is small (only five classes) the tutorial
