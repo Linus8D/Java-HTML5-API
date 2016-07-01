@@ -19,8 +19,8 @@ will learn how to
 2.  how to extend Java-HTML5-API's `abstract class HtmlTags` in order to model HTML tags/elements such as `<p></p>`, `<div class="foo"></div>` among others.
 
 ### Part 1: An empty HTML document at a given directory
-Java-HTML5-API's models a HTML document using the `HtmlFile` class. This class also contains a method `createHtmlFile`
-that constructs the HTML document at the directory provided as input argument to the method. 
+Java-HTML5-API's models a HTML document using the `HtmlFile` class. This class has a method `createHtmlFile(String dir)`
+that constructs a HTML file at the directory specified as input argument. 
 ```java
     // Create a HtmlFile instance and name the HTML document that it models index.
     HtmlFile index = new HtmlFile();
