@@ -29,28 +29,25 @@ that constructs a HTML file at the directory specified as input argument. The na
 The above HtmlFile instance models a HTML document with the following HTML:
 ```HTML
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
-    </head>
-
-    <body>
-    </body>
-    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+</body>
 </html>
 ```
-The above HTML can be created as the HTML document _index.html_ at a given directory using the HtmlFile instance 
-_createHtmlFile()_ method:
+The above HTML can be created as the HTML document _Hello World!.html_ at a given directory using the HtmlFile instance 
+`createHtmlFile` method. The following listing includes a method call to `createHtmlFile` (added to the last line of the previous listing):
 ```java
-    // Create a HtmlFile instance and name the HTML document that it models index.
-    HtmlFile index = new HtmlFile();
-    index.setFileName("index");
-    // Create a HTML document named index.html at the directory /home/JoeDoe/Desktop/Hello World
-    index.createHtmlFile("/home/JoeDoe/Desktop/Hello World");
+    // Create a HtmlFile instance and name the HTML document that it models Hello World!.
+    HtmlFile helloWorld = new HtmlFile();
+    helloWorld.setFileName("Hello World!");
+    // Create a HTML document named Hello World!.html at the directory /home/JoeDoe/Desktop/Hello World
+    helloWorld.createHtmlFile("/home/JoeDoe/Desktop/Hello World");
 ```
 ### Adding meta tags within the &lt;head&gt;&lt;/head&gt; tags
 From the HTML markup of the empty HTML document in the previous example, the reader can notice that the 
