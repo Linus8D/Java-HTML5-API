@@ -41,7 +41,7 @@ The above HtmlFile instance models a HTML document with the following HTML:
 </html>
 ```
 The above HTML can be created as the HTML document _Hello World!.html_ at a given directory using the HtmlFile instance 
-`createHtmlFile` method (see the last line of the listing):
+`createHtmlFile` method:
 ```java
     // Create a HtmlFile instance and name the HTML document that it models Hello World!.
     HtmlFile helloWorld = new HtmlFile();
@@ -49,6 +49,8 @@ The above HTML can be created as the HTML document _Hello World!.html_ at a give
     // Create a HTML document named Hello World!.html at the directory /home/JoeDoe/Desktop/Hello World
     helloWorld.createHtmlFile("/home/JoeDoe/Desktop/Hello World");
 ```
+<strong>Remark:</strong> In the above example we used the directory `"/home/JoeDoe/Desktop/Hello World`. Make sure that you
+use a directory that exists on your system. 
 ### Adding meta tags within the &lt;head&gt;&lt;/head&gt; tags
 From the HTML markup of the empty HTML document in the previous example, the reader can notice that the 
 head tags of the HTML document contains a minimal, default markup. Because a HTML document would (normally) contain atleast
