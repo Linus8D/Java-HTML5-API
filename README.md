@@ -18,9 +18,7 @@ will learn how to
 1.  create a HTML document at a directory of choosing using the Java-HTML5-API and
 2.  how to extend Java-HTML5-API's `abstract class HtmlTags` in order to model HTML tags/elements such as `<p></p>`, `<div class="foo"></div>` among others.
 
-The _Hello World!_ tutorial is structured as follows. In the next section the reader learns how to create an empty HTML document at a directory of his/her choosing. 
-
-### Creating an empty HTML document at a given directory
+### Part 1: An empty HTML document at a given directory
 Java-HTML5-API's models a HTML document using the `HtmlFile` class. This class also contains a method `createHtmlFile`
 that constructs the HTML document at the directory provided as input argument to the method. 
 ```java
