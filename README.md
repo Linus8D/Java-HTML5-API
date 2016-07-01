@@ -1,6 +1,6 @@
 # Introduction
 Websites can be though of as either being static or dynamic. A _static website_ is composed of HTML files
-on a server. Each time a user visits a web page on the website the corresponding HTML file is directly rendered by the user's web browser. This contrasts to so-called _dynamic websites_ which are not composed of HTML files on a server. Instead, a web page of a dynamic website is assembled upon each user request by a server-side web application. 
+on a server and the corresponding web page's are rendered directly in a visitors browser. This contrasts to so-called _dynamic websites_ which are not composed of HTML files on a server. Instead, a web page of a dynamic website is assembled upon each user request by a server-side web application. 
 
 A _static website_ is composed of HTML files along with external assets such as Javascripts and CSS files. This contrasts to  _dynamic websites_ which are assembled by a serve-side web-application each time an user visits a website. 
 
