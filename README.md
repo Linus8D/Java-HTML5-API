@@ -20,11 +20,12 @@ will learn how to
 
 ### Part 1: An empty HTML document at a given directory
 Java-HTML5-API's models a HTML document/file using the `HtmlFile` class. This class has a method `createHtmlFile`
-that constructs a HTML file at the directory specified as input argument. The name of the HTML file is specified using the `setFileName` method.
+that constructs a HTML file at the directory specified as input argument. The name of the HTML file is specified using the `setFileName` method. The name of the HTML file can be set excluding or including the `.html` extension:
 ```java
     // Create a HtmlFile instance and name the HTML document that it models index.
     HtmlFile index = new HtmlFile();
     index.setFileName("index");
+    //Also ok: index.setFileName("index.html");
 ```    
 The above HtmlFile instance models a HTML document with the following HTML markup:
 ```HTML
