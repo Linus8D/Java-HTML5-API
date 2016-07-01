@@ -41,7 +41,7 @@ The above HtmlFile instance models a HTML document with the following HTML:
 </html>
 ```
 The above HTML can be created as the HTML document _Hello World!.html_ at a given directory using the HtmlFile instance 
-`createHtmlFile` method. The following listing includes a method call to `createHtmlFile` (added to the last line of the previous listing):
+`createHtmlFile` method (see the last line of the listing):
 ```java
     // Create a HtmlFile instance and name the HTML document that it models Hello World!.
     HtmlFile helloWorld = new HtmlFile();
