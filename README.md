@@ -26,18 +26,21 @@ that constructs a HTML file at the directory specified as input argument. The na
     HtmlFile helloWorld = new HtmlFile();
     helloWorld.setFileName("Hello World!"); // Also ok: index.setFileName("Hello World!.html");
 ```    
-The above HtmlFile instance models a HTML document with the following HTML markup:
+The above HtmlFile instance models a HTML document with the following HTML:
 ```HTML
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+    </head>
+
+    <body>
+    </body>
+    
 </html>
 ```
 The above HTML can be created as the HTML document _index.html_ at a given directory using the HtmlFile instance 
