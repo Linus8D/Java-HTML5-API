@@ -66,7 +66,25 @@ Before proceeding to the next section, we consider the general structure of the 
 </body>
 </html>
 ```
-The above markup contains three major HTML elements/tags. These are the `<html></html>`, `<head></head>` and `<body></body>` tags.
+The above markup contains three major HTML elements/tags. These are the `<html></html>`, `<head></head>` and `<body></body>` tags. We also find that the `<head></head>` and `<body></body>` tags are nested within the `<html></html>` tags:
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        .
+        .
+        .
+    </head>
+    
+    <body>
+        .
+        .
+        .
+    </body>
+    
+</html>
+```
 
 ### Adding meta tags within the &lt;head&gt;&lt;/head&gt; tags
 From the HTML markup of the empty HTML document in the previous example, the reader can notice that the 
