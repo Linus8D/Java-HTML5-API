@@ -2,8 +2,6 @@
 Websites can be though of as either being static or dynamic. A _static website_ is composed of HTML files
 on a server and the corresponding web page's are rendered directly in a visitors browser. This contrasts to so-called _dynamic websites_ in which the HTML files are assembled upon each request by a server-side web application.
 
-A _static website_ is composed of HTML files along with external assets such as Javascripts and CSS files. This contrasts to  _dynamic websites_ which are assembled by a serve-side web-application each time an user visits a website. 
-
 Because static websites requires no assembly by a web--application, the website load time and hosting costs are often reduced. 
 
 Java-HTML5-API is a Java package for creating HTML files in a local directory that can be used to create static websites.
