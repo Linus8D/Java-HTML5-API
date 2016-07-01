@@ -22,10 +22,9 @@ will learn how to
 Java-HTML5-API's models a HTML document/file using the `HtmlFile` class. This class has a method `createHtmlFile`
 that constructs a HTML file at the directory specified as input argument. The name of the HTML file is specified using the `setFileName` method. The name of the HTML file can be set excluding or including the `.html` extension:
 ```java
-    // Create a HtmlFile instance and name the HTML document that it models index.
-    HtmlFile index = new HtmlFile();
-    index.setFileName("index");
-    //Also ok: index.setFileName("index.html");
+    // Create a HtmlFile instance and name the HTML document that it models Hello World!.
+    HtmlFile helloWorld = new HtmlFile();
+    helloWorld.setFileName("Hello World!"); // Also ok: index.setFileName("Hello World!.html");
 ```    
 The above HtmlFile instance models a HTML document with the following HTML markup:
 ```HTML
@@ -35,7 +34,7 @@ The above HtmlFile instance models a HTML document with the following HTML marku
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>null</title>
+    <title></title>
 </head>
 <body>
 </body>
