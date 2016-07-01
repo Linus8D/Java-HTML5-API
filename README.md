@@ -105,14 +105,14 @@ HTML elements within the &lt;head&gt; tags we first get the <strong>Head</strong
 add elements to the Head instance.
 
 In the following listing, we add a title, author and description to the Hello World document. Add this before the method
-call to _createHtmlFile_ :
+call to `createHtmlFile`:
 ```java
     // Add meta inside the head tags:
-    index.getHtml().getHead().setTitle("Hello World");
-    index.getHtml().getHead().setAuthorMeta("Joe Doe");
-    index.getHtml().getHead().setDescriptionMeta(
-        "Hello World is an introductory application in computer science "
-        + "that, in some fashion, displays Hello World! to a user");
+    helloWorld.getHtml().getHead().setTitle("Hello World");
+    helloWorld.getHtml().getHead().setAuthorMeta("Joe Doe");
+    helloWorld.getHtml().getHead().setDescriptionMeta(
+        "Hello World! is an introductory application in computer science "
+        + "that prints Hello World!");
 ```
 Including the above listing with the previous listings generates a HTML document with the following markup:
 ```html
@@ -123,7 +123,7 @@ Including the above listing with the previous listings generates a HTML document
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Joe Doe">
-    <meta name="description" content="Hello World is an introductory application in computer science that, in some fashion, displays Hello World! to a user">
+    <meta name="description" content="Hello World! is an introductory application in computer science that prints Hello World!">
     <title>Hello World</title>
 </head>
 <body>
