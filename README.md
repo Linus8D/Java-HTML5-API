@@ -6,7 +6,7 @@ user. This contrasts to so–called dynamic websites in which the HTML files are
 on the server but are assembled on a case to case basis by a web application when the
 corresponding web page receives a visitor. Hence, for dynamic websites, the HTML file that corresponds to the visited web page has to be assemblied before it is sent to the user's web broser.
 
-Because the HTML 
+While the HTML file assembly in dynamic websites allows for the HTML files to be created dynamically for a particular visitor it also increases the web page load time. Furhter more, the web application might be complicated to develop and/or increase the hosting costs of the website. Therefore, when dynamic properties are not necessary, it is desirable to implement static websites instead.  
 
 Java-HTML5-API is a Java package for creating HTML files in a local directory that can be used to create static websites.
 
