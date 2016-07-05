@@ -4,10 +4,9 @@ web server. When an user visits a web page on a static website, the correspondin
 file is directly sent to the user’s web browser which renders and displays the web page to the
 user. This contrasts to so–called dynamic websites in which the HTML files are not stored
 on the server but are assembled on a case to case basis by a web application when the
-corresponding web page receives a visitor. I.e. the HTML file of a webpage is not directly sent to the user's web browser 
-in a dynamic website and therefore increases the web page load time.
+corresponding web page receives a visitor. Hence, for dynamic websites, the HTML file that corresponds to the visited web page has to be assemblied before it is sent to the user's web broser.
 
-Because static websites requires no assembly by a web--application, the website load time and hosting costs are often reduced. 
+Because the HTML 
 
 Java-HTML5-API is a Java package for creating HTML files in a local directory that can be used to create static websites.
 
