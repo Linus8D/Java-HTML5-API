@@ -150,14 +150,12 @@ with the text "Hello World!" and added to the `Body` instance.
 #### Defining the P class
 The P class is defined as a class which constructor takes a `String` object as input argument and the `toString()` method
 is overriden to print out the HTML of the HTML paragraph tags. This later overriding of the `toString` method is enforced by
-the `abstract Class` `HtmlTag` which the `P` class extends:
+the `abstract Class` `HtmlTag` (which the `P` class extends):
 ``` java
 class P extends HtmlTag
 {
     String txt;
 
-    public P(){};
-    
     public P(String txt)
     {
         this.txt = txt;
@@ -167,9 +165,14 @@ class P extends HtmlTag
     public String toString() 
     {
         return "<p>"+txt+"</p>\n";
-    }    
+    }
 }
 ```
+---
+
+<strong>Remark:</strong> The above example is a simple implementation for illustrative purposes. 
+
+---
 #### Printing Hello World to the browser
 The following section proceds by instantiating a `P` instance `P helloWorld` with the text "Hello World" and adding the `P` instance to the list of `HtmlTag`s in the  `Body` instance:
 ```java
