@@ -174,10 +174,10 @@ class P extends HtmlTag
 
 ---
 #### Printing Hello World to the browser
-The following section proceds by instantiating a `P` instance `P helloWorld` with the text "Hello World" and adding the `P` instance to the list of `HtmlTag`s in the  `Body` instance:
+The following section proceds by instantiating a `P` instance `P helloWorldTxt` with the text "Hello World" and adding the `P` instance to the list of `HtmlTag`s in the  `Body` instance:
 ```java
-        P helloWorld = new P("Hello world!");
-        index.getHtml().getBody().getTags().add(helloWorld);
+        P helloWorldTxt = new P("Hello world!");
+        helloWorld.getHtml().getBody().getTags().add(helloWorldTxt);
 ```
 Including the above listing before the method call to the `createHtmlFile()` method constructs a HTML document with the following HTML:
 ```html
@@ -196,8 +196,7 @@ Including the above listing before the method call to the `createHtmlFile()` met
 </body>
 </html>
 ```
-Which the reader recognizes as a HTML document that prints _Hello World!_ in the browser. An complete Java class of the 
-above example is submitted in the next listing. 
+Which the reader recognizes as a HTML document that prints _Hello World!_ in the browser. The next listing presents a full Java class of the HelloWorld application. 
 ```java
 package HelloWorld;
 
@@ -209,19 +208,18 @@ public class HelloWorld
 {
     public static void main(String[] args) 
     {        
-        HtmlFile index = new HtmlFile();
-        index.setFileName("index");
+        HtmlFile helloWorld = new HtmlFile();
+        helloWorld.setFileName("Hello World!");
         
-        index.getHtml().getHead().setTitle("Hello World");
-        index.getHtml().getHead().setAuthorMeta("Joe Doe");
-        index.getHtml().getHead().setDescriptionMeta(
+        helloWorld.getHtml().getHead().setAuthorMeta("Joe Doe");
+        helloWorld.getHtml().getHead().setDescriptionMeta(
                 "Hello World is an introductory application in computer science "
                 + "that, in some fashion, displays Hello World! to a user");
         
-        P helloWorld = new P("Hello world!");
-        index.getHtml().getBody().getTags().add(helloWorld);
+        P helloWorldTxt = new P("Hello world!");
+        helloWorld.getHtml().getBody().getTags().add(helloWorldTxt);
         
-        index.createHtmlFile("/home/linus/Desktop/Hello World");
+        helloWorld.createHtmlFile("/home/linus/Desktop/Hello World");
     }               
 }
 
@@ -243,11 +241,3 @@ class P extends HtmlTag
     }    
 }
 ```
-
-## Example - A simple blog
-Att skriva...
-1.  Antag att vi har en databas med artiklar. Varje tupel kan skrivas som (id, titel, beskrivning, innehåll, publiseringsdatum, författare).
-2.  Antag vidare att en java class som heter databas har skapats med vilken man kan hämta artiklar ur databasen.
-3.  Antag vidare att database klassen förvarar sina artiklar i en List<Article> articleData instans.
-4.  Antag att artikel instansen är skriven enligt java beans så att man kan skriva get...() och set...().
-5.  Konstruera nu en HtmlTag extension som beskriver hur en artikel skall se ut på websidan.
