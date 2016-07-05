@@ -100,14 +100,14 @@ From previous listings we also find that there exists HTML tags within the head 
 of `Head` instances (albeit not necessarily explicitly declared). 
 
 Adding HTML tags within the head tags is of concern in the next section.
+
 ### Part 2: Adding HTML tags within the `<head></head>` tags
 From the HTML markup of the empty HTML document in the previous example, the reader can notice that the 
 head tags of the HTML document contains a minimal, default markup. Because a HTML document would (normally) contain atleast
-a `<title>` tag and links to external assets, such as CSS files. Adding content inside the head tags is of great 
+a `<title>` tag and links to external assets (such as CSS files) adding content inside those `<head>` tags is of great 
 interest. 
 
-The approach of Java-HTML5-API is to use _getters_ and _setters_ to set the instance variables. Therefore, in order to add
-HTML elements within the &lt;head&gt; tags we first get the <strong>Head</strong> instance of the HtmlFile instance and
+Java-HTML5-API is a Java Bean, meaning that _getters_ e.g. `getFoo()` and _setters_ e.g. `setFoo(...)` is often used to change the state of (or in a wide sense manipulate)  an object. HTML elements within the &lt;head&gt; tags we first get the <strong>Head</strong> instance of the HtmlFile instance and
 add elements to the Head instance.
 
 In the following listing, we add a title, author and description to the Hello World document. Add this before the method
