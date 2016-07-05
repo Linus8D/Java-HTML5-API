@@ -107,9 +107,10 @@ head tags of the HTML document contains a minimal, default markup. Because a HTM
 a `<title>` tag and links to external assets (such as CSS files) adding content inside those `<head>` tags is of great 
 interest. 
 
-Java-HTML5-API is a Java Bean which means that the (typically) prefered way of changing the state of an object are through _getters_ e.g. `getFoo()` and _setters_ e.g. `setFoo(...)`. Hence, to change the state of the HTML elements within the &lt;head&gt; tags we first get the <strong>Head</strong> instance of the HtmlFile instance and
-add elements to the Head instance.
-
+Java-HTML5-API is a Java Bean which means that the (typically) prefered way of changing the state of an object are through _getters_ e.g. `getFoo()` and _setters_ e.g. `setFoo(...)`. Hence, to change the state of the HTML elements within the &lt;head&gt; tags we first get the <strong>Head</strong> instance of the HtmlFile instance and add elements to the Head instance:
+```java
+    helloWorld.getHead().setFoo(...);
+```
 In the following listing, we add a title, author and description to the Hello World document. Add this before the method
 call to `createHtmlFile`:
 ```java
