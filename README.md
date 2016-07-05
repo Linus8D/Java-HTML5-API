@@ -19,7 +19,7 @@ A _Hello World_ application is an introductory application that displays the sen
 will learn how to
 
 1.  create a HTML document at a directory of choosing using the Java-HTML5-API and
-2.  how to extend Java-HTML5-API's `abstract class HtmlTags` in order to model HTML tags/elements such as `<p></p>`, `<div class="foo"></div>` among others.
+2.  how to extend Java-HTML5-API's `abstract class HtmlTags` in order to model HTML tags/elements such as the `<p>` tag.
 
 ### Part 1: An empty HTML document at a given directory
 Java-HTML5-API's models a HTML document/file using the `HtmlFile` class. This class has a method `createHtmlFile`
