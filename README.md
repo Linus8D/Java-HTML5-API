@@ -97,9 +97,9 @@ This nested hierarchy suggests that the head and body tags can be considered as 
 2.  `Html` has a `Head` instance member and a `Body` instance member. `Head` is a class that models `<head></head>` and `Body` is a class that models  `<body></body>`
 
 From previous listings we also find that there exists HTML tags within the head tags. These HTML tags are similarly members
-of `Head` instances, albeit not necessarily explicitly declared. Adding HTML tags within the head tags is of concern in the 
-next section.
+of `Head` instances (albeit not necessarily explicitly declared). 
 
+Adding HTML tags within the head tags is of concern in the next section.
 ### Part 2: Adding HTML tags within the `<head></head>` tags
 From the HTML markup of the empty HTML document in the previous example, the reader can notice that the 
 head tags of the HTML document contains a minimal, default markup. Because a HTML document would (normally) contain atleast
