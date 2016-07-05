@@ -131,14 +131,15 @@ Including the above listing with the previous listings generates a HTML document
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Joe Doe">
     <meta name="description" content="Hello World! is an introductory application in computer science that prints Hello World!">
-    <title>Hello World</title>
+    <title>Hello World!</title>
 </head>
 <body>
 </body>
 </html>
 ```
-We still have not added content to the HTML document, as can be seen since there are no content between the &lt;body&gt; opening and closing tags. In order to add content to the body tags, we operate on the Body instance of the Html instance 
-(which is an instance variable of the HtmlFile instance).
+The above markup will add the text _Hello World!_ to a browser's toolbar and displays the title _Hello World!_ for the web page
+in search engines such as Google. However there still does not exist any content between the `<body></body>` tags in the above
+markup. Hence, no content will actually be displayed within the browser. In order to add content to the body tags, we operate on the Body instance of the Html instance (which is an instance variable of the HtmlFile instance). This is of concern in the next section.
 
 ### Adding HTML elements to the &lt;Body&gt; instance
 The Body class contains an instance variable declared as `List<HtmlTags> tags`. The `HtmlTag` class is an `abstract Class`
