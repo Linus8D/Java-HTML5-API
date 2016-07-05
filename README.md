@@ -12,8 +12,7 @@ Java-HTML5-API is a Java package for creating HTML files in a local directory th
 
 
 # Getting started
-The following tutorials serves as usage instruction material. Because the packages is small (only five classes) the tutorial
-should be sufficient for developers interested in extending the packages as well. 
+The following tutorials serves as instruction material for getting started with Java-HTML5-API.
 
 ## Tutorial 1 - A _Hello World_ application
 A _Hello World_ application is an introductory application that displays the sentence _Hello World!_ to the user. In the following tutorial, the sentence _Hello World!_ will be displayed in the reader's web browser. In the process, the reader 
